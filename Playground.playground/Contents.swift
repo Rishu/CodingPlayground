@@ -3,6 +3,6 @@
 import UIKit
 import Foundation
 
-print(MaximumHistogram.maxHistogram([1,2,4]))
 
-print(MaximumHistogram.maxHistogram([2,1,2,3,1]))
+let result = Celebrity.find(4)
+
