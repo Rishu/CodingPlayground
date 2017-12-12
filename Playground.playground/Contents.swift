@@ -8,20 +8,18 @@ import Foundation
 //let result = Celebrity.find(4)
 
 
-// maze
-let items = ["6 5",
-             "1 1 S",
-             "3 1 \\",
-             "3 3 \\",
-             "1 3 /",
-             "5 3 /"]
 
 
-let maze = try! Maze(parameters: items)
-maze.description()
-let result = maze.findSolution()
-print(result.result)
-print(result.position ?? "")
-
-
-
+if let result = ["Kaushal":"Deo"].javaUTF8() {
+    print(String(data: result, encoding: .utf8))
+    if let data = result.javaUTF8() {
+    print(String(data: data, encoding: .utf8))
+    do {
+        let value = try JSONSerialization.jsonObject(with: data, options: [.allowFragments])
+        print(value)
+    }
+    catch let error {
+        print(error)
+    }
+    }
+}
